@@ -36,6 +36,11 @@ dependencies {
     // optional - RxJava support
     implementation "androidx.paging:paging-rxjava2:$rootProject.pagingVersion" // use -ktx for Kotlin
 
+    implementation "androidx.lifecycle:lifecycle-runtime:2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+
+    api project(':bindingcollectionadapter-recyclerview')
+    api project(':bindingcollectionadapter-paging')
 
     implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerViewVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"

@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':bindingcollectionadapter', ':bindingcollectionadapter-paging', ':bindingcollectionadapter-recyclerview'

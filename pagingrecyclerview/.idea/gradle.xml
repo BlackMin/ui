@@ -9,6 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bindingcollectionadapter" />
+            <option value="$PROJECT_DIR$/bindingcollectionadapter-paging" />
+            <option value="$PROJECT_DIR$/bindingcollectionadapter-recyclerview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

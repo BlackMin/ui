@@ -95,7 +95,7 @@ public abstract class BasePagingListFragment<T> extends Fragment {
                 .setPageSize(20)
                 .setEnablePlaceholders(false)
                 .setInitialLoadSizeHint(20)
-                .setMaxSize(60)
+                .setPrefetchDistance(5)
                 .build();
     }
 

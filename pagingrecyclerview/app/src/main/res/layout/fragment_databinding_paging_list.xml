@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.baymax.android.pagingrecyclerview.BaseDataBindingPagingListFragment.DefaultViewModel"/>
+
+        <import type="com.baymax.android.pagingrecyclerview.LoadingStateView.LOADING_STATE"/>
+
+        <import type="android.view.View"/>
+    </data>
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutManager="@{viewModel.layoutManager}"
+            android:visibility="@{(viewModel.loadingState == LOADING_STATE.STATE_LOADING || viewModel.loadingState == LOADING_STATE.STATE_SUCCESS)?View.VISIBLE:View.GONE}"
+            app:diffConfig="@{viewModel.diffConfig}"
+            app:itemBinding="@{viewModel.itemBinding}"
+            app:pageItems="@{viewModel.items}"
+            app:adapter="@{viewModel.adapterFactory}"
+            app:addItemDecoration="@{viewModel.itemDecoration}"/>
+
+        <com.baymax.android.pagingrecyclerview.LoadingStateView
+            android:id="@+id/loading_state_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:loadingState="@{viewModel.loadingState}"/>
+
+    </FrameLayout>
+
+</layout>
