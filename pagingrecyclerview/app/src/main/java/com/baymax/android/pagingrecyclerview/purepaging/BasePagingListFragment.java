@@ -1,4 +1,4 @@
-package com.baymax.android.pagingrecyclerview;
+package com.baymax.android.pagingrecyclerview.purepaging;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,9 +19,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration;
 import androidx.recyclerview.widget.RecyclerView.LayoutManager;
+import com.baymax.android.pagingrecyclerview.LoadingStateView;
 import com.baymax.android.pagingrecyclerview.LoadingStateView.LOADING_STATE;
-import com.baymax.android.pagingrecyclerview.datasource.DataRepository;
-import com.baymax.android.pagingrecyclerview.datasource.PageDataSource;
+import com.baymax.android.pagingrecyclerview.R;
+import com.baymax.android.pagingrecyclerview.purepaging.datasource.DataRepository;
+import com.baymax.android.pagingrecyclerview.purepaging.datasource.PageDataSource;
 import java.util.HashMap;
 
 public abstract class BasePagingListFragment<T> extends Fragment {

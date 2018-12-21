@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
-import com.baymax.android.pagingrecyclerview.test.TestBaseDatabindingListFragment;
+import com.baymax.android.pagingrecyclerview.demo.TestBaseDatabindingListFragment;
 
 public class MainActivity extends AppCompatActivity {
 

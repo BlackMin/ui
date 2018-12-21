@@ -1,4 +1,4 @@
-package com.baymax.android.pagingrecyclerview.test;
+package com.baymax.android.pagingrecyclerview.purepaging;
 
 import java.io.Serializable;
 import java.util.ArrayList;

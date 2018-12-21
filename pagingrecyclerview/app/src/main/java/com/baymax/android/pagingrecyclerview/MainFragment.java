@@ -1,15 +1,12 @@
 package com.baymax.android.pagingrecyclerview;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.DiffUtil.ItemCallback;
-import com.baymax.android.pagingrecyclerview.adapter.TestPageAdapter;
-import com.baymax.android.pagingrecyclerview.datasource.DataRepository;
-import com.baymax.android.pagingrecyclerview.test.TestEntity;
+import com.baymax.android.pagingrecyclerview.purepaging.adapter.TestPageAdapter;
+import com.baymax.android.pagingrecyclerview.purepaging.datasource.DataRepository;
+import com.baymax.android.pagingrecyclerview.purepaging.TestEntity;
+import com.baymax.android.pagingrecyclerview.purepaging.BasePagingListFragment;
 import java.util.List;
 import java.util.Map;
 

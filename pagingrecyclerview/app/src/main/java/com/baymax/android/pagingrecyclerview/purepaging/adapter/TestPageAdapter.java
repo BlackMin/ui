@@ -1,4 +1,4 @@
-package com.baymax.android.pagingrecyclerview.adapter;
+package com.baymax.android.pagingrecyclerview.purepaging.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.DiffUtil.ItemCallback;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import com.baymax.android.pagingrecyclerview.R;
-import com.baymax.android.pagingrecyclerview.test.TestEntity;
+import com.baymax.android.pagingrecyclerview.purepaging.TestEntity;
 
 public class TestPageAdapter extends PagedListAdapter<TestEntity,TestPageAdapter.TestItemViewHolder> {
 

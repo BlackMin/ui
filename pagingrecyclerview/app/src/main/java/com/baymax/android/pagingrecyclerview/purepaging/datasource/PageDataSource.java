@@ -1,4 +1,4 @@
-package com.baymax.android.pagingrecyclerview.datasource;
+package com.baymax.android.pagingrecyclerview.purepaging.datasource;
 
 import android.util.Log;
 import androidx.annotation.NonNull;

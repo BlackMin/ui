@@ -1,8 +1,9 @@
-package com.baymax.android.pagingrecyclerview.test;
+package com.baymax.android.pagingrecyclerview.demo;
 
 import androidx.annotation.NonNull;
 import com.baymax.android.pagingrecyclerview.BaseDataBindingPagingListFragment;
 import com.baymax.android.pagingrecyclerview.R;
+import com.baymax.android.pagingrecyclerview.purepaging.TestEntity;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import java.util.ArrayList;
